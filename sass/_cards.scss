@@ -1,8 +1,12 @@
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 5rem;
     padding: 7rem 0;
+    @media only screen and (max-width: $bp-small){
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
 }
 .card {
     display: grid;

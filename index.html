@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <div class='navbar'>
         <div class='navbar__top__itmes sm__none'>
-            <div class='navbar__btn navbar__logo-Box'>
+            <div class='navbar__logo-Box'>
                 <img class='navbar__top__logo' src='./img/favicon.png'>
             </div>
         </div>
@@ -107,9 +107,9 @@
                     </div>
 
                     <div class='card__items'>
-                        <button class='card__btn'>-</button>
-                        <input class='card__input' value='2' disabled>
-                        <button class='card__btn'>+</button>
+                        <button class='card__btn' onclick="decNum('.input1')">-</button>
+                        <input class='card__input input1' value='5' disabled>
+                        <button class='card__btn' onclick="incNum('.input1')">+</button>
                     </div>
                 </div>
             </div>
@@ -124,77 +124,9 @@
                     </div>
 
                     <div class='card__items'>
-                        <button class='card__btn'>-</button>
-                        <input class='card__input' value='2' disabled>
-                        <button class='card__btn'>+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 3 -->
-            <div class='card'>
-                <img class='card__img' src='./img/2.jpg'>
-
-                <div class='card__box'>
-                    <div>
-                        <p class='card__name'>Name</p>
-                        <p class='card__price'>$23</p>
-                    </div>
-
-                    <div class='card__items'>
-                        <button class='card__btn'>-</button>
-                        <input class='card__input' value='2' disabled>
-                        <button class='card__btn'>+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class='card'>
-                <img class='card__img' src='./img/2.jpg'>
-
-                <div class='card__box'>
-                    <div>
-                        <p class='card__name'>Name</p>
-                        <p class='card__price'>$23</p>
-                    </div>
-
-                    <div class='card__items'>
-                        <button class='card__btn'>-</button>
-                        <input class='card__input' value='2' disabled>
-                        <button class='card__btn'>+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class='card'>
-                <img class='card__img' src='./img/2.jpg'>
-
-                <div class='card__box'>
-                    <div>
-                        <p class='card__name'>Name</p>
-                        <p class='card__price'>$23</p>
-                    </div>
-
-                    <div class='card__items'>
-                        <button class='card__btn'>-</button>
-                        <input class='card__input' value='2' disabled>
-                        <button class='card__btn'>+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class='card'>
-                <img class='card__img' src='./img/2.jpg'>
-
-                <div class='card__box'>
-                    <div>
-                        <p class='card__name'>Name</p>
-                        <p class='card__price'>$23</p>
-                    </div>
-
-                    <div class='card__items'>
-                        <button class='card__btn'>-</button>
-                        <input class='card__input' value='2' disabled>
-                        <button class='card__btn'>+</button>
+                        <button class='card__btn' onclick="decNum('.input2')">-</button>
+                        <input class='card__input input2' value='1' disabled>
+                        <button class='card__btn' onclick="incNum('.input2')">+</button>
                     </div>
                 </div>
             </div>
@@ -221,27 +153,31 @@
             <div class='sidebar__table-3 border__bottom'>
                 <p class='para'>Shipping</p>
                 <p class='para'></p>
-                <p class='para sidebar__end'>$40</p>
+                <p class='para sidebar__end shipping'>$40</p>
             </div>
         </div>
 
             <div>
             <div class='sidebar__table-2'>
-                <p class='para'>Total</p>
-                <p class='para sidebar__end'>$64</p>
-            </div>
-            <div class='sidebar__table-2'>
                 <p class='para'>Fee</p>
-                <p class='para sidebar__end'>$0</p>
+                <p class='para sidebar__end fee'>$0</p>
             </div>
             <div class='sidebar__table-2'>
                 <p class='para'>Discount</p>
-                <p class='para sidebar__end'>$0</p>
+                <p class='para sidebar__end discount'>$0</p>
+            </div>
+            <div class='sidebar__table-2'>
+                <p class='para'>Total</p>
+                <p class='para sidebar__end total'>$64</p>
             </div>
             <button class='btn mt-medium'>Check out</button>
         </div>
         </div>
     </div>
+
+
+    <!-- App.js file -->
+    <script src="app.js"></script>
 
 </body>
 

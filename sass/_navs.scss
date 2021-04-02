@@ -2,8 +2,9 @@
     grid-column: center-start / full-end;
     padding: 3rem 0;
 
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: $bp-large){
         grid-column: full-start / full-end;
+        padding: 1rem;
     }
     &__heading {
         display: grid;

@@ -186,12 +186,7 @@ body {
         background-color: #fff; } }
     .navbar__top__logo {
       width: 2.4rem;
-      height: 2.4rem;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%; }
+      height: 2.4rem; }
   .navbar__bottom {
     display: grid;
     justify-items: center;
@@ -218,9 +213,12 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 5rem;
   padding: 7rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
 
 .card {
   display: grid;
@@ -274,9 +272,10 @@ body {
 .navs {
   grid-column: center-start / full-end;
   padding: 3rem 0; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 62.5em) {
     .navs {
-      grid-column: full-start / full-end; } }
+      grid-column: full-start / full-end;
+      padding: 1rem; } }
   .navs__heading {
     display: grid;
     justify-items: center; }
@@ -289,7 +288,7 @@ body {
   @media only screen and (max-width: 62.5em) {
     .homes {
       grid-column: full-start / full-end;
-      padding: 1rem 0; } }
+      padding: 1rem; } }
 
 .home__tabs {
   display: grid;
@@ -333,7 +332,8 @@ body {
   @media only screen and (max-width: 62.5em) {
     .sidebars {
       grid-column: full-start / full-end;
-      margin-bottom: 5rem; } }
+      margin-bottom: 5rem;
+      padding: 1rem; } }
 
 .sidebar {
   display: grid;

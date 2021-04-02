@@ -70,21 +70,9 @@
             padding: 0.5rem 0;
             background-color: $color-white;
         }
-
-        // &__itmes {
-        //     display: grid;
-        //     align-items: center;
-        //     grid-row-gap: 2rem;
-        //     padding-bottom: 4rem;
-        // }
         &__logo {
             width: 2.4rem;
             height: 2.4rem;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
         }
     }
     &__bottom {
