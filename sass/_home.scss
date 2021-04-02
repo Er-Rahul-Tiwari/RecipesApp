@@ -1,6 +1,5 @@
 .homes {
     grid-column: center-start / col-end 5;
-    padding: 2rem;
     @media only screen and (max-width: $bp-large) {
         grid-column: full-start / full-end;
         padding: 1rem 0;
@@ -51,64 +50,6 @@
         font-size: $font-16;
         &:hover {
             cursor: pointer;
-        }
-    }
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 5rem;
-    padding: 7rem 0;
-}
-.card {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-gap: 2rem;
-    &__img {
-        width: 10rem;
-        padding: 1rem;
-        grid-column: 1/2;
-    }
-    &:hover &__img {
-        box-shadow: 0 0 1rem rgba($color-black, 0.2);
-    }
-    &__box {
-        grid-column: 2/3;
-        display: grid;
-        grid-row-gap: 1rem;
-        align-content: space-around;
-    }
-    &__name {
-        color: $color-555;
-        font-weight: $weight-600;
-    }
-    &__price {
-        font-size: $font-12;
-    }
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(3, min-content);
-        grid-auto-flow: column;
-        grid-column-gap: 1rem;
-    }
-    &__btn,
-    &__input {
-        display: grid;
-        align-content: center;
-        justify-content: center;
-        width: 3rem;
-        height: 3rem;
-        font-size: $font-16;
-        text-align: center;
-        border: 1px solid rgba($color-black, 0.1);
-        background-color: $color-white;
-        font-weight: $weight-600;
-        color: $color-777;
-        outline: none;
-        &:hover {
-            cursor: pointer;
-            background-color: $color-fa;
         }
     }
 }

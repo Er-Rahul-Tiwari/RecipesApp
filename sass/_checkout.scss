@@ -1,6 +1,5 @@
 .sidebars {
     grid-column: col-end 6 / full-end;
-    margin-top: 5rem;
     @media only screen and (max-width: $bp-large) {
         grid-column: full-start / full-end;
     }
@@ -11,25 +10,24 @@
     grid-row-gap: 7rem;
     align-items: center;
     justify-content: start;
-    margin: 4rem 0;
     @media only screen and (max-width: $bp-small) {
         padding: 2rem 1rem;
     }
-    &__table-3{
+    &__table-3 {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 3rem;
         grid-row-gap: 1rem;
         justify-items: start;
     }
-    &__table-2{
+    &__table-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3rem;
         grid-row-gap: 1rem;
         justify-items: start;
     }
-    &__end{
+    &__end {
         display: grid;
         justify-self: end;
     }
