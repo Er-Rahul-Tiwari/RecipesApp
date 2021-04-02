@@ -63,15 +63,15 @@
             </div>
         </div>
     </div>
-<!-- Navs -->
-<div class='navs'>
+    <!-- Navs -->
+    <div class='navs'>
 
-    <div class='navs__heading'>
-        <h2 class='heading-2'>The Great Table </h2>
-        <p class="para">Today</p>
+        <div class='navs__heading'>
+            <h2 class='heading-2'>The Great Table </h2>
+            <p class="para">Today</p>
+        </div>
+
     </div>
-
-</div>
     <!-- Main Page -->
     <div class='homes'>
         <h3 class='heading-3 mb-small'>Table 5- Mr. Rahul</h3>
@@ -108,9 +108,11 @@
                     </div>
 
                     <div class='card__items'>
-                        <button class='card__btn' onclick="decNum('.input1','.card__price','.card__name','.update__name','.update__price')">-</button>
+                        <button class='card__btn'
+                            onclick="decNum('.input1','.card__price','.card__name','.update__name','.update__price')">-</button>
                         <input class='card__input input1' value='0' disabled>
-                        <button class='card__btn' onclick="incNum('.input1','.card__price','.card__name','.update__name','.update__price')">+</button>
+                        <button class='card__btn'
+                            onclick="incNum('.input1','.card__price','.card__name','.update__name','.update__price')">+</button>
                     </div>
                 </div>
             </div>
@@ -139,38 +141,38 @@
     <div class='sidebars'>
         <div class='sidebar'>
             <div>
-            <h3 class='heading-3 mb-medium'>check</h3>
-            <div class='sidebar__table-2'>
-                <h4 class='heading-4'>Product</h4>
-                <h4 class='heading-4 sidebar__end'>Price</h4>
+                <h3 class='heading-3 mb-medium'>check</h3>
+                <div class='sidebar__table-2'>
+                    <h4 class='heading-4'>Product</h4>
+                    <h4 class='heading-4 sidebar__end'>Price ($)</h4>
+                </div>
+                <div class='mb-small'></div>
+                <div class='sidebar__table-2'>
+                    <p class='para update__name'></p>
+                    <span class='para sidebar__end update__price'></span>
+                </div>
+                <div class='sidebar__table-3 border__bottom'>
+                    <p class='para'>Shipping</p>
+                    <p class='para'></p>
+                    <p class='para sidebar__end shipping'>40</p>
+                </div>
             </div>
-            <div class='mb-small'></div>
-            <div class='sidebar__table-2'>
-                <p class='para update__name'></p>
-                <span class='para sidebar__end update__price'>$</span>
-            </div>
-            <div class='sidebar__table-3 border__bottom'>
-                <p class='para'>Shipping</p>
-                <p class='para'></p>
-                <p class='para sidebar__end shipping'>$40</p>
-            </div>
-        </div>
 
             <div>
-            <div class='sidebar__table-2'>
-                <p class='para'>Fee</p>
-                <p class='para sidebar__end fee'>$0</p>
+                <div class='sidebar__table-2'>
+                    <p class='para'>Fee</p>
+                    <p class='para sidebar__end fee'>0</p>
+                </div>
+                <div class='sidebar__table-2'>
+                    <p class='para'>Discount</p>
+                    <p class='para sidebar__end discount'>0</p>
+                </div>
+                <div class='sidebar__table-2'>
+                    <p class='para'>Total</p>
+                    <p class='para sidebar__end total'>64</p>
+                </div>
+                <button class='btn mt-medium'>Check out</button>
             </div>
-            <div class='sidebar__table-2'>
-                <p class='para'>Discount</p>
-                <p class='para sidebar__end discount'>$0</p>
-            </div>
-            <div class='sidebar__table-2'>
-                <p class='para'>Total</p>
-                <p class='para sidebar__end total'>$64</p>
-            </div>
-            <button class='btn mt-medium'>Check out</button>
-        </div>
         </div>
     </div>
 
