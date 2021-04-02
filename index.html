@@ -103,12 +103,13 @@
                 <div class='card__box'>
                     <div>
                         <p class='card__name'>Name</p>
-                        <p class='card__price'>$23</p>
+                        <span class='font--12'>$</span>
+                        <span class='card__price'>23</span>
                     </div>
 
                     <div class='card__items'>
                         <button class='card__btn' onclick="decNum('.input1','.card__price')">-</button>
-                        <input class='card__input input1' value='5' disabled>
+                        <input class='card__input input1' value='0' disabled>
                         <button class='card__btn' onclick="incNum('.input1','.card__price')">+</button>
                     </div>
                 </div>
@@ -125,7 +126,7 @@
 
                     <div class='card__items'>
                         <button class='card__btn' onclick="decNum('.input2')">-</button>
-                        <input class='card__input input2' value='1' disabled>
+                        <input class='card__input input2' value='0' disabled>
                         <button class='card__btn' onclick="incNum('.input2')">+</button>
                     </div>
                 </div>
@@ -139,15 +140,13 @@
         <div class='sidebar'>
             <div>
             <h3 class='heading-3 mb-medium'>check</h3>
-            <div class='sidebar__table-3'>
+            <div class='sidebar__table-2'>
                 <h4 class='heading-4'>Product</h4>
-                <h4 class='heading-4'>Qty</h4>
                 <h4 class='heading-4 sidebar__end'>Price</h4>
             </div>
             <div class='mb-small'></div>
-            <div class='sidebar__table-3'>
+            <div class='sidebar__table-2'>
                 <p class='para'>Winexx</p>
-                <p class='para'>1</p>
                 <p class='para sidebar__end'>$24</p>
             </div>
             <div class='sidebar__table-3 border__bottom'>

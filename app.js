@@ -4,23 +4,29 @@ var availableItems = 10;
 const decNum = (val,card__price)=>{
   var itemVal = document.querySelector(val);
   var itemPrice = document.querySelector(card__price);
-  console.log(itemPrice);
+  // console.log(itemVal.value);
+  // console.log(itemPrice.innerHTML);
   
   if (itemVal.value <= 0) {
     itemVal.value = 0;
   }else{
     itemVal.value = parseInt(itemVal.value) - 1;
+    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 23;
+    console.log("item price : " + itemPrice.innerHTML);
   }
 }
 const incNum = (val,card__price)=>{
   var itemVal = document.querySelector(val);
   var itemPrice = document.querySelector(card__price);
-  console.log(itemPrice.value)
+
+  // console.log(itemPrice.innerHTML)
+
   if( itemVal.value >= availableItems){
     itemVal.value = availableItems;
     alert(`Available items only ${availableItems}`);
   }else{
     itemVal.value = parseInt(itemVal.value) + 1;
+    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) + 23;
   }
 }
 
