@@ -1,0 +1,117 @@
+.navbar {
+    grid-column: sidebar-start / sidebar-end;
+
+    display: grid;
+    grid-row: 1 / -1;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 9999;
+    box-shadow: 2px 0 4px rgba($color-black, 0.1);
+
+    @media only screen and (max-width: $bp-small) {
+        grid-column: full-start / full-end;
+        display: grid;
+        grid-template-rows: 1fr;
+        height: auto;
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        overflow: hidden;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    &__active {
+        // background-color: $color-blue-light;
+        border-left: 1px solid $color-222;
+
+        @media only screen and (max-width: $bp-small){
+            border-left: none;
+            border-bottom: 1px solid $color-222;
+        }
+        svg {
+            fill: $color-aaa;
+            &:hover {
+                fill: $color-222;
+            }
+        }
+    }
+    &__btn {
+        width: 3.6rem;
+        height: 3.6rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__logo-Box{
+        display: grid;
+        align-content: start;
+        justify-items: center;
+        grid-row-gap: 2rem;
+    }
+    &__top {
+        display: grid;
+        align-content: start;
+        justify-items: center;
+        grid-row-gap: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            position: fixed;
+            bottom: 0px;
+            grid-auto-flow: column;
+            align-items: end;
+            width: 100%;
+            padding: 0.5rem 0;
+            background-color: $color-white;
+        }
+
+        // &__itmes {
+        //     display: grid;
+        //     align-items: center;
+        //     grid-row-gap: 2rem;
+        //     padding-bottom: 4rem;
+        // }
+        &__logo {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    &__bottom {
+        display: grid;
+        justify-items: center;
+        align-content: end;
+        grid-row-gap: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-auto-flow: column;
+            grid-gap: 0;
+            background-color: $color-white;
+            padding: 0.4rem 1.5rem;
+            width: 100%;
+            justify-items: end;
+        }
+    }
+}
+
+.sm__none {
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+}
+.lg__none {
+    display: none;
+    @media only screen and (max-width: $bp-small) {
+        display: grid;
+    }
+}

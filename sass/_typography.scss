@@ -1,0 +1,122 @@
+// FONT WEIGHT VARIABLE
+$weight-300: 300;
+$weight-300i: 300i;
+$weight-400: 400;
+$weight-400i: 400i;
+$weight-600: 600;
+$weight-700: 700;
+
+// FONT SIZE
+$font-12: 1.2rem;
+$font-14: 1.4rem;
+$font-16: 1.6rem;
+$font-18: 1.8rem;
+$font-20: 2rem;
+$font-24: 2.4rem;
+$font-30: 3rem;
+$font-40: 4rem;
+
+// COLOR
+$color-white: #fff;
+$color-black: #000;
+$color-blue-dark: rgba(7, 7, 161, 0.9);
+$color-blue-light: rgba(28, 28, 245, 0.9);
+$color-blue-lighter: rgba(28, 28, 245, 0.4);
+$color-222: #222;
+$color-555: #555;
+$color-777: #777;
+$color-999: #999;
+$color-aaa: #aaa;
+$color-eee: #eee;
+$color-fa: #fafafa;
+
+// UTILITIES
+.mb-small {
+    margin-bottom: 1rem !important;
+}
+.mt-small {
+    margin-top: 1rem !important;
+}
+.mb-medium {
+    margin-bottom: 2rem !important;
+}
+.mt-medium {
+    margin-top: 2rem !important;
+}
+.mb-large {
+    margin-bottom: 4rem !important;
+}
+.mt-large {
+    margin-top: 4rem !important;
+}
+
+.black {
+    color: $color-222 !important;
+}
+.blue-dark {
+    background-color: $color-blue-dark;
+}
+.blue-light {
+    background-color: $color-blue-light;
+}
+.blue-lighter {
+    background-color: $color-blue-lighter;
+}
+
+// FONT FAMILY
+$font-primary: "Nunito", sans-serif;
+$font-secondary: "Josefin Sans", sans-serif;
+
+// BREAK POINT
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+$bp-smallest: 25em;
+
+// HEADING
+%heading {
+    font-family: $font-secondary;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: $font-30;
+}
+.heading-2 {
+    @extend %heading;
+    font-size: $font-24;
+}
+.heading-3 {
+    @extend %heading;
+    font-size: $font-18;
+}
+.heading-4 {
+    @extend %heading;
+    font-size: $font-16;
+}
+
+%para {
+    font-size: $font-16;
+    color: $color-999;
+    text-transform: capitalize;
+    font-weight: $weight-700;
+}
+.para {
+    @extend %para;
+}
+
+.border__bottom {
+    border-bottom: 2px solid $color-eee;
+    margin-top: 1rem !important;
+}
+%border__radius-1 {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
