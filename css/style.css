@@ -336,12 +336,18 @@ body {
       padding: 1rem; } }
 
 .sidebar {
+  grid-row: 2/-1;
+  height: 70vh;
+  position: sticky;
+  top: 0rem;
   display: grid;
   grid-row-gap: 7rem;
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
-      padding: 2rem 1rem; } }
+      padding: 2rem 1rem;
+      position: static;
+      height: auto; } }
   .sidebar__table-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
