@@ -52,15 +52,6 @@ $color-fa: #fafafa;
 .black {
     color: $color-222 !important;
 }
-.blue-dark {
-    background-color: $color-blue-dark;
-}
-.blue-light {
-    background-color: $color-blue-light;
-}
-.blue-lighter {
-    background-color: $color-blue-lighter;
-}
 
 // FONT FAMILY
 $font-primary: "Nunito", sans-serif;
@@ -99,15 +90,18 @@ $bp-smallest: 25em;
 }
 
 %para {
-    font-size: $font-16;
-    color: $color-999;
+    color: $color-777;
     text-transform: capitalize;
-    font-weight: $weight-700;
+    font-weight: $weight-600;
 }
 .para {
     @extend %para;
 }
-
+.font-12{
+    font-size: $font-12;
+    font-weight: $weight-700;
+    color: $color-777;
+}
 .border__bottom {
     border-bottom: 2px solid $color-eee;
     margin-top: 1rem !important;

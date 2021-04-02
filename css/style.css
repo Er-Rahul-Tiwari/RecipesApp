@@ -19,15 +19,6 @@
 .black {
   color: #222 !important; }
 
-.blue-dark {
-  background-color: rgba(7, 7, 161, 0.9); }
-
-.blue-light {
-  background-color: rgba(28, 28, 245, 0.9); }
-
-.blue-lighter {
-  background-color: rgba(28, 28, 245, 0.4); }
-
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
@@ -47,21 +38,18 @@
   font-size: 1.6rem; }
 
 .para {
-  font-size: 1.6rem;
-  color: #999;
+  color: #777;
   text-transform: capitalize;
-  font-weight: 700; }
+  font-weight: 600; }
+
+.font-12 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #777; }
 
 .border__bottom {
   border-bottom: 2px solid #eee;
   margin-top: 1rem !important; }
-
-.sidebar {
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem; }
 
 *,
 ::before,
@@ -107,12 +95,12 @@ body {
   -ms-border-radius: 0.6rem;
   -o-border-radius: 0.6rem;
   font-size: 1.6rem;
-  background-color: rgba(45, 122, 45, 0.7);
+  background-color: rgba(45, 122, 45, 0.87);
   color: #fff;
   outline: none;
   border: none; }
   .btn:hover {
-    background-color: rgba(45, 122, 45, 0.87);
+    background-color: rgba(45, 122, 45, 0.7);
     cursor: pointer; }
 
 .link {
@@ -338,37 +326,22 @@ body {
 
 .sidebar {
   display: grid;
-  grid-row-gap: 3rem;
+  grid-row-gap: 7rem;
   align-items: center;
   justify-content: start;
-  margin: 4rem 0;
-  padding: 3rem;
-  background-color: #fafafa; }
+  margin: 4rem 0; }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
       padding: 2rem 1rem; } }
-  .sidebar__employee {
+  .sidebar__table-3 {
     display: grid;
-    grid-row-gap: 1rem; }
-  .sidebar__col-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+    justify-items: start; }
+  .sidebar__table-2 {
     display: grid;
-    grid-template-columns: 12fr 2fr;
-    grid-column-gap: 1rem;
-    align-items: center;
-    grid-auto-flow: column; }
-  .sidebar__grid-2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 1rem;
-    align-items: center;
-    grid-auto-flow: column; }
-  .sidebar__background {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 0.4rem 0.6rem;
-    background-color: #fff; }
-  .sidebar__baze {
-    border-left: 2px solid rgba(28, 28, 245, 0.9);
-    padding: 2rem;
-    margin-bottom: 8rem; }
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+    justify-items: start; }
