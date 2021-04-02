@@ -1,6 +1,6 @@
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 5rem;
     padding: 7rem 0;
 }
@@ -8,10 +8,17 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-gap: 2rem;
+    @media only screen and (max-width: $bp-small){
+        grid-gap: 1rem;
+    }
     &__img {
         width: 10rem;
         padding: 1rem;
         grid-column: 1/2;
+        @media only screen and (max-width: $bp-small){
+            width: 8rem;
+            padding: .5rem;
+        }
     }
     &:hover &__img {
         box-shadow: 0 0 1rem rgba($color-black, 0.2);

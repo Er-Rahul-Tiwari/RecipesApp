@@ -2,6 +2,7 @@
     grid-column: col-end 6 / full-end;
     @media only screen and (max-width: $bp-large) {
         grid-column: full-start / full-end;
+        margin-bottom: 5rem;
     }
 }
 
@@ -9,7 +10,6 @@
     display: grid;
     grid-row-gap: 7rem;
     align-items: center;
-    justify-content: start;
     @media only screen and (max-width: $bp-small) {
         padding: 2rem 1rem;
     }

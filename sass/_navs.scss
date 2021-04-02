@@ -1,4 +1,16 @@
 .navs {
     grid-column: center-start / full-end;
     padding: 3rem 0;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+    }
+    &__heading {
+        display: grid;
+        justify-items: center;
+        @media only screen and (max-width: $bp-small){
+                justify-items: start;
+        }
+
+    }
 }

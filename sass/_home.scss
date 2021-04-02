@@ -7,10 +7,6 @@
 }
 
 .home {
-    &__heading {
-        display: grid;
-        justify-items: center;
-    }
     &__tabs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
