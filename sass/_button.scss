@@ -11,12 +11,12 @@
     -ms-border-radius: 0.6rem;
     -o-border-radius: 0.6rem;
     font-size: $font-16;
-    background-color: $color-blue-light;
+    background-color: $color-green;
     color: $color-white;
     outline: none;
     border: none;
     &:hover {
-        background-color: $color-blue-dark;
+        background-color: $color-green-light;
         cursor: pointer;
     }
 }
@@ -28,7 +28,7 @@
     justify-self: center;
     font-size: $font-14;
     font-weight: $weight-600;
-    color: $color-blue-light;
+    color: $color-green-light;
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -38,27 +38,32 @@
     width: 2.4rem;
     height: 2.4rem;
 }
-.notification {
-    @extend %icon;
-    fill: $color-999;
-}
-.presentation {
-    @extend %icon;
-    fill: $color-999;
-}
-.global {
-    @extend %icon;
-    fill: $color-999;
-}
-.lock {
-    @extend %icon;
-    fill: $color-999;
-}
-.search {
-    @extend %icon;
-    fill: $color-999;
-}
+.notification,
+.presentation,
+.global,
+.lock,
+.search,
 .hut {
     @extend %icon;
     fill: $color-999;
 }
+// .presentation {
+//     @extend %icon;
+//     fill: $color-999;
+// }
+// .global {
+//     @extend %icon;
+//     fill: $color-999;
+// }
+// .lock {
+//     @extend %icon;
+//     fill: $color-999;
+// }
+// .search {
+//     @extend %icon;
+//     fill: $color-999;
+// }
+// .hut {
+//     @extend %icon;
+//     fill: $color-999;
+// }
