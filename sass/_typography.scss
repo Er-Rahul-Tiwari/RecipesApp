@@ -97,14 +97,9 @@ $bp-smallest: 25em;
 .para {
     @extend %para;
 }
-.font-12{
-    font-size: $font-12;
-    font-weight: $weight-700;
-    color: $color-777;
-}
 .border__bottom {
     border-bottom: 2px solid $color-eee;
-    margin-top: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 %border__radius-1 {
     border-radius: 1rem;
