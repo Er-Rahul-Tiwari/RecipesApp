@@ -1,9 +1,10 @@
 
 var availableItems = 10;
 
-const decNum = (val)=>{
+const decNum = (val,card__price)=>{
   var itemVal = document.querySelector(val);
-  console.log(itemVal.value);
+  var itemPrice = document.querySelector(card__price);
+  console.log(itemPrice);
   
   if (itemVal.value <= 0) {
     itemVal.value = 0;
@@ -11,8 +12,10 @@ const decNum = (val)=>{
     itemVal.value = parseInt(itemVal.value) - 1;
   }
 }
-const incNum = (val)=>{
+const incNum = (val,card__price)=>{
   var itemVal = document.querySelector(val);
+  var itemPrice = document.querySelector(card__price);
+  console.log(itemPrice.value)
   if( itemVal.value >= availableItems){
     itemVal.value = availableItems;
     alert(`Available items only ${availableItems}`);
