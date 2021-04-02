@@ -102,15 +102,15 @@
 
                 <div class='card__box'>
                     <div>
-                        <p class='card__name'>Name</p>
-                        <span class='font--12'>$</span>
+                        <p class='card__name'>Wine</p>
+                        $
                         <span class='card__price'>23</span>
                     </div>
 
                     <div class='card__items'>
-                        <button class='card__btn' onclick="decNum('.input1','.card__price')">-</button>
+                        <button class='card__btn' onclick="decNum('.input1','.card__price','.card__name','.update__name','.update__price')">-</button>
                         <input class='card__input input1' value='0' disabled>
-                        <button class='card__btn' onclick="incNum('.input1','.card__price')">+</button>
+                        <button class='card__btn' onclick="incNum('.input1','.card__price','.card__name','.update__name','.update__price')">+</button>
                     </div>
                 </div>
             </div>
@@ -146,8 +146,8 @@
             </div>
             <div class='mb-small'></div>
             <div class='sidebar__table-2'>
-                <p class='para'>Winexx</p>
-                <p class='para sidebar__end'>$24</p>
+                <p class='para update__name'></p>
+                <span class='para sidebar__end update__price'>$</span>
             </div>
             <div class='sidebar__table-3 border__bottom'>
                 <p class='para'>Shipping</p>
