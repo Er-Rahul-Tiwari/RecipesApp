@@ -109,32 +109,15 @@
 
                     <div class='card__items'>
                         <button class='card__btn'
-                            onclick="decNum('.input1','.card__price','.card__name','.update__name','.update__price')">-</button>
+                            onclick="decNum('.input1','.card__price','.update__price')">-</button>
                         <input class='card__input input1' value='0' disabled>
                         <button class='card__btn'
-                            onclick="incNum('.input1','.card__price','.card__name','.update__name','.update__price')">+</button>
+                            onclick="incNum('.input1','.card__price','.update__price')">+</button>
                     </div>
                 </div>
             </div>
-            <!-- 2 -->
-            <div class='card'>
-                <img class='card__img' src='./img/2.jpg'>
 
-                <div class='card__box'>
-                    <div>
-                        <p class='card__name'>Name</p>
-                        <p class='card__price'>$23</p>
-                    </div>
-
-                    <div class='card__items'>
-                        <button class='card__btn' onclick="decNum('.input2')">-</button>
-                        <input class='card__input input2' value='0' disabled>
-                        <button class='card__btn' onclick="incNum('.input2')">+</button>
-                    </div>
-                </div>
-            </div>
         </div>
-
     </div>
 
     <!-- Right sidebar -->
@@ -148,8 +131,8 @@
                 </div>
                 <div class='mb-small'></div>
                 <div class='sidebar__table-2'>
-                    <p class='para update__name'></p>
-                    <span class='para sidebar__end update__price'></span>
+                    <p class='para update__name'>Wine</p>
+                    <span class='para sidebar__end update__price'>0</span>
                 </div>
                 <div class='sidebar__table-3 border__bottom'>
                     <p class='para'>Shipping</p>
